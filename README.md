@@ -19,3 +19,13 @@ Language: Python 3.x
 Libraries: re (Regex for text splitting), Jupyter Notebook (.ipynb)
 
 Dataset: The Verdict by Edith Wharton (for initial vocabulary building)
+
+
+# Byte Pair Encoding (BPE) & Tiktoken
+In this stage of the project, I implemented text tokenization using OpenAI's tiktoken library. Tokenization is the process of converting raw text into a sequence of integers that an LLM can process.
+
+# Why Tiktoken?
+
+Speed: Built in Rust, making it significantly faster than standard Python-based BPE tokenizers.
+
+Efficiency: Uses Byte Pair Encoding to break down common words into single tokens while handling rare words by splitting them into smaller "sub-word" chunks.
